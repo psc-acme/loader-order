@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/loader-order",
+    "description": "Package loader-order for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\LoaderOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/cache": "^7.0",
+        "symfony/messenger": "^7.0",
+        "symfony/dotenv": "^7.0",
+        "symfony/http-kernel": "^6.2",
+        "predis/predis": "^2.0",
+        "symfony/validator": "^7.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
